@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>todo</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>todo.</h1>
+
+        <div id="todo-form">
+            <div id="form-content">
+                <ul>
+                    <li><label for="task-input">task</label>
+                         <input id="task-input" type="text" name="task-input"></li>
+                    <li><button id="task-submit">add task</button><button id="task-cancel">cancel</button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="project-form">
+            <div id="form-content">
+                <ul>
+                    <li><label for="project-name">project</label>
+                         <input id="project-name" type="text" name="project-name"></li>
+                    <li><button id="project-submit">add project</button><button id="project-cancel">cancel</button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col" id="left">
+                <h1>project</h1>
+                <button id="newProject">+ project</button>
+                <ul id="project-list">
+                    <li id='active-project'>project1</li>
+                </ul>
+            </div>
+            <div class="col" id="right">
+                <div class="text-center">
+                    <h1 id="project-title">project name </h1>
+                    <button id="newTodo">+ todo</button>
+                </div>
+                <div id="project-todoLists">
+                    <ul id="project1">
+                        <li><input type="checkbox"><label>task</label><button class="delete">delete</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
